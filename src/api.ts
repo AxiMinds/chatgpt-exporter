@@ -403,7 +403,7 @@ export async function fetchAllConversations(): Promise<ApiConversationItem[]> {
         const result = await fetchConversations(offset, limit)
         conversations.push(...result.items)
         if (offset + limit >= result.total) break
-        if (offset + limit >= 1000) break
+        if (offset + limit >= 20000) break
         offset += limit
     }
     return conversations
