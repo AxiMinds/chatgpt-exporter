@@ -1,5 +1,105 @@
 # Changelog
 
+All notable changes to the ChatGPT Exporter Enhanced will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [3.0.0] - 2024-06-24
+
+### Added
+- Complete rewrite with modular architecture
+- Unlimited message export capability (10k+ messages)
+- ChatGPT Teams workspace detection and support
+- Anti-bot detection with randomized delays (0.1-3.3 seconds)
+- Comprehensive content extraction:
+  - Code Interpreter outputs and generated files
+  - Canvas documents with full revision history
+  - DALL-E generated images
+  - File attachments with metadata
+  - Citation extraction
+- Multiple export formats:
+  - JSON with complete metadata
+  - Compressed JSON with attachments
+  - Markdown with embedded files
+  - HTML with syntax highlighting
+- Real-time progress tracking
+- Automatic token refresh on expiration
+- File caching to prevent duplicate downloads
+- Exponential backoff for rate limiting
+- Conversation archiving support
+- Bulk delete functionality
+- Memory-efficient streaming for large exports
+
+### Changed
+- API client now uses proper pagination
+- Improved error handling and recovery
+- Enhanced UI with modal dialogs
+- Better file organization structure
+- Modernized code architecture
+
+### Fixed
+- 1000 message limitation
+- Token expiration issues
+- Memory overflow with large conversations
+- Rate limiting errors
+- Missing file attachments
+
+## [2.28.0] - Previous Version
+
+### Added
+- Project support
+- New sidebar layout compatibility
+
+### Fixed
+- Button position issues
+
+## [2.27.2] - Previous Version
+
+### Fixed
+- Screenshot functionality in latest layout
+
+## Migration Guide
+
+### From v2.x to v3.0
+
+1. **Uninstall Old Version**: Remove the previous userscript completely
+2. **Clear Cache**: Clear browser cache for chatgpt.com
+3. **Install New Version**: Install the v3.0.0 script
+4. **Test Installation**: Run the test script in console
+5. **First Export**: Start with a small export to verify functionality
+
+### Breaking Changes
+
+- Export file structure has changed
+- API endpoints updated for Teams support
+- New UI elements require page refresh
+
+### Known Issues
+
+- Some beta ChatGPT features may not be fully supported
+- Very old conversations might have incomplete metadata
+- Deleted messages appear as empty entries
+
+## Roadmap
+
+### Planned Features
+- [ ] Incremental export (only new messages)
+- [ ] Export scheduling
+- [ ] Custom export templates
+- [ ] Integration with cloud storage
+- [ ] Export statistics dashboard
+- [ ] Conversation search before export
+- [ ] Export filters (date range, keywords)
+- [ ] Batch processing improvements
+
+### Under Consideration
+- Browser extension version
+- Desktop application
+- API for programmatic access
+- Real-time export monitoring
+- Export verification tools
+
 ## [2.27.1](https://github.com/pionxzh/chatgpt-exporter/compare/userscript-v2.27.0...userscript-v2.27.1) (2025-02-02)
 
 
