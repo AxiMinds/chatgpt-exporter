@@ -1,23 +1,66 @@
-# Logs
-logs
-*.log
+# Dependencies
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-*.local
-.turbo
+# Testing
+coverage/
+*.test.js
+__tests__/
 
-# Editor directories and files
-.idea
+# Export outputs (for testing)
+exports/
+chatgpt_export_*/
+*.zip
+test-exports/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-tsconfig.tsbuildinfo
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Personal notes
+notes.md
+TODO.md
+personal/
+
+# Sensitive data
+auth-tokens.txt
+credentials.json
+*.key
+*.pem
+
+# Large test files
+test-data/
+sample-exports/
+large-conversations/
